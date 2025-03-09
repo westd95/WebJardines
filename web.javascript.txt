@@ -1,0 +1,16 @@
+// script.js
+document.addEventListener("DOMContentLoaded", function() {
+  // Ejemplo: mostrar un mensaje en la consola cuando la página se carga
+  console.log("La página se ha cargado completamente.");
+  
+  // Ejemplo: abrir un menú al hacer clic en un botón
+  const menuButton = document.getElementById("menuButton");
+  if (menuButton) {
+    menuButton.addEventListener("click", function() {
+      const navMenu = document.getElementById("navMenu");
+      if (navMenu) {
+        navMenu.classList.toggle("active");
+      }
+    });
+  }
+});
